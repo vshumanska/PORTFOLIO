@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ustawienie viewportu dla responsywności -->
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="nav">   <!--Nawigacja -->
+        <div class="container">     <!-- Kontener dla zawartości nawigacji -->
+            <div class="nav-row">   <!-- Wiersz nawigacji, który zawiera menu -->
+                <a href="./index.html" class="logo" ><strong>Strona</strong> portfolio</a>   <!-- Logo z linkiem do strony głównej -->
+
+                <button class="dark-mode-btn">
+                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button>
+                
+                <ul class="nav-list">   <!-- Lista nawigacyjna -->
+                    <li class="nav-list__item"><a href="./projects.html" class="nav-list__link">Projekty</a></li>
+                    <li class="nav-list__item"><a href="./services.html" class="nav-list__link">Usługi</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link nav-list__link--active">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+                <h1 class="title-1">Contacts</h1>
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        <h2 class="title-2">Lokalizacja</h2>
+                        <p>Poznań, Poland</p>
+                    </li>
+                    <li class="content-list__item">
+                        <h2 class="title-2">WhatsApp</h2>
+                        <p><a href="tel:+79051234567">(+48) 730360558</a></p>
+                    </li>
+                    <li class="content-list__item">
+                        <h2 class="title-2">Email</h2>
+                        <p><a href="mailto:shumanskavladyslava@gmail.com">shumanskavladyslava@gmail.com</a></p>     <!-- Adres email z linkiem do wysłania wiadomości -->
+                    </li>
+                </ul>
+            </div>
+
+            <button class="question-btn" id="question-btn">Masz pytania?</button>
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <span class="close-btn" id="close-btn">&times;</span>
+                    <h2>Formularz kontaktowy</h2>
+                    <form id="contact-form">
+                        <label for="name" class="form__label">Imię:</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                        
+                        <label for="email" class="form__label">Email:</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                        
+                        <label for="message" class="form__label">Napisz swoje pytanie:</label>
+                        <textarea id="message" name="message" class="form__input" required></textarea>
+                        
+                        <button type="submit" class="btn">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./img/icons/gitHub.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/shumanskavladyslava" target="_blank"><img src="./img/icons/linkedIn.svg" alt="Link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>    <!-- Dołączenie głównego pliku JavaScript -->
+
+</body>
+</html>

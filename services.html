@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ustawienie viewportu dla responsywności -->
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="nav">   <!--Nawigacja -->
+        <div class="container">     <!-- Kontener dla zawartości nawigacji -->
+            <div class="nav-row">   <!-- Wiersz nawigacji, który zawiera menu -->
+                <a href="./index.html" class="logo"><strong>Strona</strong> portfolio</a>   <!-- Logo z linkiem do strony głównej -->
+
+                <button class="dark-mode-btn">
+                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button>
+                
+                <ul class="nav-list">   <!-- Lista nawigacyjna -->
+                    <li class="nav-list__item"><a href="./projects.html" class="nav-list__link">Projekty</a></li>
+                    <li class="nav-list__item"><a href="./servises.html" class="nav-list__link nav-list__link--active">Usługi</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+                <h1 class="title-1">“Kalkulator kosztów usług”</h1>
+               
+        </div>
+        <main class="section">
+            <div class="container">
+                </ul>
+                <h2 class="title-2">Tu znajdziesz różnorodne usługi z zakresu tworzenia stron internetowych, wybierz co ci pasuje najbardziej:</h2>
+                <form id="rate-calculator" class="form">
+                    <select id="service" name="service" class="form__input" required>
+                        <option value="" disabled selected>Wybierz usługę</option>
+                        <option value="uxui">Projektowanie UX/UI - 100 PLN/h</option>
+                        <option value="frontend">Rozwój frontendu - 80 PLN/h</option>
+                        <option value="testing">Testowanie i optymalizacja - 70 PLN/h</option>
+                        <option value="support">Wsparcie techniczne - 60 PLN/h</option>
+                    </select>
+                    <label for="hours" class="form__label">Liczba godzin:</label>
+                    <input type="number" id="hours" name="hours" class="form__input" min="1" required>
+                    <button type="submit" class="btn">Oblicz</button>
+                </form>
+                <p id="total-cost" class="total-cost"></p>
+            </div>
+        </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./img/icons/gitHub.svg" alt="Link"></a></li>
+                    <li class="social__item"><a href="https://www.linkedin.com/in/shumanskavladyslava" target="_blank"><img src="./img/icons/linkedIn.svg" alt="Link"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>    <!-- Dołączenie głównego pliku JavaScript -->
+
+</body>
+</html>

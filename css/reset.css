@@ -1,0 +1,91 @@
+/* Reset and base styles - Resetowanie i style bazowe */
+
+* {
+	padding: 0px;   /* dla wszystkich elementów*/
+	margin: 0px;    /* dla wszystkich elementów*/
+	border: none;   /* Usunięcie obramowania dla wszystkich elementów */
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;     /*dla wszystkich elementów oraz ich pseudo-elementów */
+}
+
+/* Links - Linki */
+
+a, a:link, a:visited  {
+    text-decoration: none;      /* Usunięcie podkreślenia tekstu dla linków */
+}
+
+a:hover  {
+    text-decoration: none;      /* Usunięcie podkreślenia tekstu dla linków po najechaniu myszką */
+}
+
+/* Common elements */
+
+aside, nav, footer, header, section, main {
+	display: block;             /* Ustawienie display jako block dla wymienionych elementów */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;			/* Dziedziczenie rozmiaru czcionki dla nagłówków i paragrafów */
+	font-weight: inherit;		/* Dziedziczenie grubości czcionki dla nagłówków i paragrafów */
+}
+
+ul, ul li {
+	list-style: none;			/* Usunięcie stylu listy (ul) i elementów listy (li) */
+}
+
+img {
+	vertical-align: top;		/* Pionowe wyrównanie obrazów u góry */
+}
+
+img, svg {
+	max-width: 100%;			/* Ustawienie maksymalnej szerokości obrazków */
+	height: auto;				/* Ustawienie automatycznej wysokości dla obrazków  */
+}
+
+address {
+  font-style: normal;			/* Styl czcionki dla linku */
+}
+
+/* Form - Formularze */
+
+input, textarea, button, select {
+	font-family: inherit;		/* Dziedziczenie czcionki dla elementów formularza */
+    font-size: inherit;			/* Dziedziczenie rozmiaru czcionki dla elementów formularza */
+    color: inherit;				/* Dziedziczenie koloru czcionki */
+    background-color: transparent;	/* Przezroczyste tło dla elementów formularza*/
+}
+
+input::-ms-clear {
+	display: none;				/* Usunięcie przycisku czyszczenia bieżącego tekstu w polach input w przeglądarce */
+}
+
+button, input[type="submit"] {	/* Przesyłanie formularz do serwera */
+    display: inline-block;		/* Ustawienie przycisków-submit jako elementów liniowych i blokowych, które nie mają przejście do kolejnej linii */
+    box-shadow: none;			/* Usunięcie cienia dla przycisków */
+    background-color: transparent;	/* Ustawienie przezroczystego tła dla przycisków */
+    background: none;
+    cursor: pointer;			/* Właściwość kursora */
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;				/* Usunięcie obramowania dla elementów w stanie focus i active  */
+}
+
+
+button::-moz-focus-inner {		/* pseudo-element - Mozilla extension */ 
+	padding: 0;					
+	border: 0;					
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
